@@ -116,12 +116,12 @@ Create user accounts and configure secure access controls for Sarah and Mike.
     - Ensure only Sarah has access to her workspace:
       ```bash
       sudo chmod 700 /home/sarah/workspace
-      sudo chown Sarah:Sarah /home/sarah/workspace
+      sudo chown sarah:sarah /home/sarah/workspace
       ```
     - Ensure only Mike has access to his workspace:
       ```bash
       sudo chmod 700 /home/mike/workspace
-      sudo chown Mike:Mike /home/mike/workspace
+      sudo chown mike:mike /home/mike/workspace
       ```
 4. **Enforced password policies:**
     - Configure password expiration every 30 days:
