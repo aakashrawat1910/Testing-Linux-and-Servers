@@ -1,6 +1,5 @@
 # Testing-Linux-and-Servers
 
-
 This repository contains the implementation for setting up a secure, monitored, and well-maintained development environment for new developers Sarah and Mike. The tasks include system monitoring, user management, and automated backup configuration.
 
 ---
@@ -21,16 +20,40 @@ This repository contains the implementation for setting up a secure, monitored, 
 Configure a monitoring system to ensure the health, performance, and capacity planning of the development environment.
 
 ### Steps
-1. Installed monitoring tools:
-    - **htop**: For CPU, memory, and process usage.
-    - **nmon**: For advanced system monitoring.
-2. Configured disk usage monitoring:
-    - Used `df` for overall disk space monitoring.
-    - Used `du` for directory-level disk usage analysis.
-3. Implemented process monitoring:
-    - Identified resource-intensive processes using `htop` and `ps aux`.
-4. Set up logging:
-    - Saved monitoring outputs to `/var/logs/monitoring.log` using scheduled scripts.
+1. **Installed monitoring tools:**
+    - Install `htop`:
+      ```bash
+      sudo apt update
+      sudo apt install htop -y
+      ```
+    - Install `nmon`:
+      ```bash
+      sudo apt update
+      sudo apt install nmon -y
+      ```
+2. **Configured disk usage monitoring:**
+    - Use `df` for overall disk space monitoring:
+      ```bash
+      df -h
+      ```
+    - Use `du` for directory-level disk usage analysis:
+      ```bash
+      du -sh /path/to/directory
+      ```
+3. **Implemented process monitoring:**
+    - Identify resource-intensive processes using `htop`:
+      ```bash
+      htop
+      ```
+    - Use `ps aux` for detailed process information:
+      ```bash
+      ps aux --sort=-%mem
+      ```
+4. **Set up logging:**
+    - Save monitoring outputs to `/var/logs/monitoring.log` using scheduled scripts:
+      ```bash
+      htop -b -n 1 > /var/logs/monitoring.log
+      ```
 
 ### Outputs
 - Screenshots of `htop`, `nmon`, and disk usage commands.
@@ -44,23 +67,37 @@ Configure a monitoring system to ensure the health, performance, and capacity pl
 Create user accounts and configure secure access controls for Sarah and Mike.
 
 ### Steps
-1. Created user accounts:
-    - Sarah: `sudo adduser Sarah`
-    - Mike: `sudo adduser Mike`
-2. Created dedicated directories:
-    - Sarah: `/home/Sarah/workspace`
-    - Mike: `/home/Mike/workspace`
-3. Set permissions:
-    - Ensured only Sarah has access to `/home/Sarah/workspace`:
+1. **Created user accounts:**
+    - Add Sarah:
+      ```bash
+      sudo adduser Sarah
+      ```
+    - Add Mike:
+      ```bash
+      sudo adduser Mike
+      ```
+2. **Created dedicated directories:**
+    - Create Sarah's workspace:
+      ```bash
+      sudo mkdir -p /home/Sarah/workspace
+      ```
+    - Create Mike's workspace:
+      ```bash
+      sudo mkdir -p /home/Mike/workspace
+      ```
+3. **Set permissions:**
+    - Ensure only Sarah has access to her workspace:
       ```bash
       sudo chmod 700 /home/Sarah/workspace
+      sudo chown Sarah:Sarah /home/Sarah/workspace
       ```
-    - Ensured only Mike has access to `/home/Mike/workspace`:
+    - Ensure only Mike has access to his workspace:
       ```bash
       sudo chmod 700 /home/Mike/workspace
+      sudo chown Mike:Mike /home/Mike/workspace
       ```
-4. Enforced password policies:
-    - Configured password expiration every 30 days using `chage`:
+4. **Enforced password policies:**
+    - Configure password expiration every 30 days:
       ```bash
       sudo chage -M 30 Sarah
       sudo chage -M 30 Mike
@@ -78,7 +115,7 @@ Create user accounts and configure secure access controls for Sarah and Mike.
 Automate backups for Sarah's Apache server and Mike's Nginx server, ensuring data integrity and recovery.
 
 ### Steps
-1. Configured backup scripts:
+1. **Configured backup scripts:**
     - Sarah's Apache backup script:
       ```bash
       #!/bin/bash
@@ -89,17 +126,19 @@ Automate backups for Sarah's Apache server and Mike's Nginx server, ensuring dat
       #!/bin/bash
       tar -czf /backups/nginx_backup_$(date +%F).tar.gz /etc/nginx/ /usr/share/nginx/html/
       ```
-2. Scheduled cron jobs:
-    - Sarah's backup:
+2. **Scheduled cron jobs:**
+    - Sarah's backup cron job:
       ```bash
+      crontab -e
       0 0 * * 2 /path/to/apache_backup.sh
       ```
-    - Mike's backup:
+    - Mike's backup cron job:
       ```bash
+      crontab -e
       0 0 * * 2 /path/to/nginx_backup.sh
       ```
-3. Verified backup integrity:
-    - Listed contents of the compressed files:
+3. **Verified backup integrity:**
+    - List contents of the compressed files:
       ```bash
       tar -tvf /backups/apache_backup_$(date +%F).tar.gz
       tar -tvf /backups/nginx_backup_$(date +%F).tar.gz
@@ -133,6 +172,11 @@ Automate backups for Sarah's Apache server and Mike's Nginx server, ensuring dat
 The full implementation and supporting files are available in this repository. Access the project at: [GitHub Repository Link](#).
 
 ---
+
+## Author
+- [Your Name]  
+- Fresher DevOps Engineer at TechCorp
+
 
 ## Author
 - Aakash Rawat 
