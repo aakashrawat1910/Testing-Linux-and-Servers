@@ -171,12 +171,6 @@ Automate backups for Sarah's Apache server and Mike's Nginx server, ensuring dat
 
 The full implementation and supporting files are available in this repository. Access the project at: [GitHub Repository Link](#).
 
----
-
-## Author
-- [Your Name]  
-- Fresher DevOps Engineer at TechCorp
-
 
 ## Author
 - Aakash Rawat 
