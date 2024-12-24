@@ -57,6 +57,12 @@ Configure a monitoring system to ensure the health, performance, and capacity pl
 
 ### Outputs
 - Screenshots of `htop`, `nmon`, and disk usage commands.
+- ![image](https://github.com/user-attachments/assets/54921845-194d-418f-8c79-62b15295bd4c)
+- ![image](https://github.com/user-attachments/assets/bb92cb93-f734-414f-90ab-c4fefa2a76e6)
+- ![image](https://github.com/user-attachments/assets/57dc9c50-7b42-49dc-ace2-74ffd8fba16c)
+
+
+
 - Example log file: `monitoring.log`
 
 ---
