@@ -150,12 +150,12 @@ Automate backups for Sarah's Apache server and Mike's Nginx server, ensuring dat
     - Sarah's Apache backup script:
       ```bash
       #!/bin/bash
-      tar -czf /backups/apache_backup_$(date +%F).tar.gz /etc/httpd/ /var/www/html/
+      tar -czf ~/workspace/backup/apache_backup_$(date +%F).tar.gz /etc/httpd/ /var/www/html/
       ```
     - Mike's Nginx backup script:
       ```bash
       #!/bin/bash
-      tar -czf /backups/nginx_backup_$(date +%F).tar.gz /etc/nginx/ /usr/share/nginx/html/
+      tar -czf ~/workspace/backup/nginx_backup_$(date +%F).tar.gz /etc/nginx/ /usr/share/nginx/html/
       ```
 2. **Scheduled cron jobs:**
     - Sarah's backup cron job:
