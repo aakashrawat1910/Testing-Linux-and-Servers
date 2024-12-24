@@ -133,9 +133,7 @@ Create user accounts and configure secure access controls for Sarah and Mike.
 ### Outputs
 - Screenshots of user creation and permission setups.
  ![image](https://github.com/user-attachments/assets/135ac087-a267-4a49-9303-8cf0d4ac018f)
-- 
-
-- Documentation of password policy enforcement.
+ ![image](https://github.com/user-attachments/assets/2838bccf-909c-4a9c-bbaf-47877924f504)
 
 ---
 
