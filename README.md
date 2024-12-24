@@ -150,7 +150,7 @@ Automate backups for Sarah's Apache server and Mike's Nginx server, ensuring dat
     - Sarah's Apache backup script:
       ```bash
       #!/bin/bash
-      tar -czf ~/workspace/backup/apache_backup_$(date +%F).tar.gz /etc/httpd/ /var/www/html/
+      tar -czf ~/workspace/backup/apache_backup_$(date +%F).tar.gz /etc/apache2/ /var/www/html/
       ```
     - Mike's Nginx backup script:
       ```bash
@@ -177,6 +177,9 @@ Automate backups for Sarah's Apache server and Mike's Nginx server, ensuring dat
 
 ### Outputs
 - Backup files in `/backups/` directory.
+  ![image](https://github.com/user-attachments/assets/eca1d81c-786f-4cb3-aedf-1da9c78074a2)
+  
+
 - Verification logs showing successful backup contents.
 
 ---
