@@ -135,6 +135,9 @@ Create user accounts and configure secure access controls for Sarah and Mike.
  ![image](https://github.com/user-attachments/assets/135ac087-a267-4a49-9303-8cf0d4ac018f)
  ![image](https://github.com/user-attachments/assets/2838bccf-909c-4a9c-bbaf-47877924f504)
 
+- Documentation of password policy enforcement.
+  ![image](https://github.com/user-attachments/assets/f4b7ab55-fc16-4a86-a321-7ccea1d83f3b)
+
 ---
 
 ## Task 3: Backup Configuration for Web Servers
