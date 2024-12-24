@@ -106,28 +106,28 @@ Create user accounts and configure secure access controls for Sarah and Mike.
 2. **Created dedicated directories:**
     - Create Sarah's workspace:
       ```bash
-      sudo mkdir -p /home/Sarah/workspace
+      sudo mkdir -p /home/sarah/workspace
       ```
     - Create Mike's workspace:
       ```bash
-      sudo mkdir -p /home/Mike/workspace
+      sudo mkdir -p /home/mike/workspace
       ```
 3. **Set permissions:**
     - Ensure only Sarah has access to her workspace:
       ```bash
-      sudo chmod 700 /home/Sarah/workspace
-      sudo chown Sarah:Sarah /home/Sarah/workspace
+      sudo chmod 700 /home/sarah/workspace
+      sudo chown Sarah:Sarah /home/sarah/workspace
       ```
     - Ensure only Mike has access to his workspace:
       ```bash
-      sudo chmod 700 /home/Mike/workspace
-      sudo chown Mike:Mike /home/Mike/workspace
+      sudo chmod 700 /home/mike/workspace
+      sudo chown Mike:Mike /home/mike/workspace
       ```
 4. **Enforced password policies:**
     - Configure password expiration every 30 days:
       ```bash
-      sudo chage -M 30 Sarah
-      sudo chage -M 30 Mike
+      sudo chage -M 30 sarah
+      sudo chage -M 30 mike
       ```
 
 ### Outputs
