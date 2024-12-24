@@ -40,6 +40,17 @@ Configure a monitoring system to ensure the health, performance, and capacity pl
       ```bash
       du -sh /path/to/directory
       ```
+    - Create a script to log disk usage periodically:
+      ```bash
+      #!/bin/bash
+      df -h > /var/log/disk_usage_$(date +%F).log
+      du -sh /path/to/directory >> /var/log/disk_usage_$(date +%F).log
+      ```
+      Add to cron for daily execution:
+      ```bash
+      crontab -e
+      0 0 * * * /path/to/disk_usage_monitor.sh
+      ```
 3. **Implemented process monitoring:**
     - Identify resource-intensive processes using `htop`:
       ```bash
@@ -48,6 +59,16 @@ Configure a monitoring system to ensure the health, performance, and capacity pl
     - Use `ps aux` for detailed process information:
       ```bash
       ps aux --sort=-%mem
+      ```
+    - Create a script to log top 10 resource-intensive processes:
+      ```bash
+      #!/bin/bash
+      ps aux --sort=-%mem | head -n 10 > /var/log/process_monitor_$(date +%F).log
+      ```
+      Add to cron for hourly execution:
+      ```bash
+      crontab -e
+      0 * * * * /path/to/process_monitor.sh
       ```
 4. **Set up logging:**
     - Save monitoring outputs to `/var/logs/monitoring.log` using scheduled scripts:
