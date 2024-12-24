@@ -78,13 +78,13 @@ Configure a monitoring system to ensure the health, performance, and capacity pl
 
 ### Outputs
 - Screenshots of `htop`, `nmon`, and disk usage commands.
-- ![image](https://github.com/user-attachments/assets/54921845-194d-418f-8c79-62b15295bd4c)
-- ![image](https://github.com/user-attachments/assets/bb92cb93-f734-414f-90ab-c4fefa2a76e6)
-- ![image](https://github.com/user-attachments/assets/57dc9c50-7b42-49dc-ace2-74ffd8fba16c)
+ ![image](https://github.com/user-attachments/assets/54921845-194d-418f-8c79-62b15295bd4c)
+ ![image](https://github.com/user-attachments/assets/bb92cb93-f734-414f-90ab-c4fefa2a76e6)
+ ![image](https://github.com/user-attachments/assets/57dc9c50-7b42-49dc-ace2-74ffd8fba16c)
 
 - Example log file: `monitoring.log`
-- ![image](https://github.com/user-attachments/assets/a9f7768d-98d4-4eb1-b699-b2818a8d9726)
-- ![image](https://github.com/user-attachments/assets/db42fb32-4cee-491a-9df3-fc260dd96a50)
+ ![image](https://github.com/user-attachments/assets/a9f7768d-98d4-4eb1-b699-b2818a8d9726)
+ ![image](https://github.com/user-attachments/assets/db42fb32-4cee-491a-9df3-fc260dd96a50)
 
 
 
@@ -97,11 +97,11 @@ Create user accounts and configure secure access controls for Sarah and Mike.
 1. **Created user accounts:**
     - Add Sarah:
       ```bash
-      sudo adduser Sarah
+      sudo adduser sarah
       ```
     - Add Mike:
       ```bash
-      sudo adduser Mike
+      sudo adduser mike
       ```
 2. **Created dedicated directories:**
     - Create Sarah's workspace:
@@ -132,6 +132,9 @@ Create user accounts and configure secure access controls for Sarah and Mike.
 
 ### Outputs
 - Screenshots of user creation and permission setups.
+ ![image](https://github.com/user-attachments/assets/135ac087-a267-4a49-9303-8cf0d4ac018f)
+- 
+
 - Documentation of password policy enforcement.
 
 ---
