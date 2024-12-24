@@ -84,6 +84,8 @@ Configure a monitoring system to ensure the health, performance, and capacity pl
 
 - Example log file: `monitoring.log`
 --- ![image](https://github.com/user-attachments/assets/a9f7768d-98d4-4eb1-b699-b2818a8d9726)
+  ![image](https://github.com/user-attachments/assets/db42fb32-4cee-491a-9df3-fc260dd96a50)
+
 
 
 ## Task 2: User Management and Access Control
