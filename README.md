@@ -182,6 +182,8 @@ Automate backups for Sarah's Apache server and Mike's Nginx server, ensuring dat
 
 
 - Verification logs showing successful backup contents.
+![image](https://github.com/user-attachments/assets/89b3d1c9-bcd9-40a0-874f-1660e39f56d1)
+![image](https://github.com/user-attachments/assets/24593261-da65-47ad-9248-f715eb6254e6)
 
 ---
 
@@ -204,7 +206,7 @@ Automate backups for Sarah's Apache server and Mike's Nginx server, ensuring dat
 
 ## Submission
 
-The full implementation and supporting files are available in this repository. Access the project at: [GitHub Repository Link](#).
+The full implementation and supporting files are available in this repository. Access the project at: [[GitHub Repository Link](https://github.com/aakashrawat1910/Testing-Linux-and-Servers.git)](#).
 
 
 ## Author
