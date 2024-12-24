@@ -178,7 +178,8 @@ Automate backups for Sarah's Apache server and Mike's Nginx server, ensuring dat
 ### Outputs
 - Backup files in `/backups/` directory.
   ![image](https://github.com/user-attachments/assets/eca1d81c-786f-4cb3-aedf-1da9c78074a2)
-  
+  ![image](https://github.com/user-attachments/assets/8cdc5c75-e511-4739-ac90-3017af813929)
+
 
 - Verification logs showing successful backup contents.
 
